@@ -10690,69 +10690,6 @@ Object.defineProperty(HTMLElement.prototype, "remAct", {
     }
   }
 });
-
-function delay(ms) {
-  return new Promise(function (resolve, reject) {
-    setTimeout(resolve, ms);
-  });
-}
-
-delay(1000).then(function (resolve) {
-  return console.log('resolve');
-}); // let = document.querySelector(' ')
-// const MyForms = () => {}
-// .forEach((cell) => {
-//    cell.addEventListener('click', (e) => {});
-// });
-// .innerHTML =
-// .getAttribute('name');
-// document.createElement(' ')
-// document.addEventListener('DOMContentLoaded', function(){ })
-// if(){}else{};
-// for (let i = 0; i < inputs.length; ++i) { }
-// const activeHEAD = (e) => {}
-// .classList.add('_is-active')
-// .classList.remove('_is-active')
-// .classList.contains('_is-active')
-// .matches('._is-active')
-// .classList.toggle('_is-active')
-// .closest(' ')
-// .forEach((cell) => {});
-// e.target
-// .style.height = ' ';
-// let head = accord.querySelector('.accord-header-js');
-// let headItems = [...head.children];
-// const copy = document.querySelectorAll('.copy');
-// let singles = Array.prototype.slice.call(copy);
-// .style.height = `${hidden.scrollHeight}px`;
-// const el = document.querySelector(".grid-content__col-title");
-// console.log(el.closest('.wrapper'));
-// el.remAct;
-// module.exports = function () {
-//   if (!Array.prototype.myMap) {
-// Array.prototype.myMap = function (callback) {
-//   if (!(this instanceof Array || this instanceof String)) {
-//     throw new TypeError("Array.prototype.myMap was called on wrong type");
-//   }
-//   if (typeof callback != "function") {
-//     throw new TypeError("Array.prototype.myMap was called on wrong type");
-//   }
-//   const result = [];
-//   for (let i = 0; i < Array.length; i++) {
-//     result.push(callback(this[i], i, this));
-//   }
-//   return result;
-// };
-//   }
-// };
-// Element.prototype.closest = function (css) {
-//   var node = this;
-//   while (node) {
-//     if (node.matches(css)) {
-//     } else return node.parentElement;
-//   }
-//   return null;
-// };
 })();
 
 /******/ })()
