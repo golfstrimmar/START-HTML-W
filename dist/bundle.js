@@ -794,7 +794,7 @@ var MyTab = function MyTab() {
             }
           });
         } else if (c == cell && c.matches("._is-active")) {
-          RemActive(c);
+          c.remAct;
           c.querySelectorAll(".hidden").forEach(function (cell) {
             cell.remAct;
           });
@@ -804,7 +804,7 @@ var MyTab = function MyTab() {
         } else {
           nabours.forEach(function (nabour) {
             if (nabour !== cell) {
-              RemActive(nabour);
+              nabour.remAct;
               nabour.querySelectorAll(".tab-js").forEach(function (cell) {
                 cell.remAct;
               });

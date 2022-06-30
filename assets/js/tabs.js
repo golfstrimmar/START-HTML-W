@@ -38,7 +38,7 @@ import { Add, Rem, AddRem, AddActive } from "/src/functions";
              }
            });
          } else if (c == cell && c.matches("._is-active")) {
-           RemActive(c);
+           c.remAct;
            c.querySelectorAll(".hidden").forEach((cell) => {
              cell.remAct;
            });
@@ -48,7 +48,7 @@ import { Add, Rem, AddRem, AddActive } from "/src/functions";
          } else {
            nabours.forEach((nabour) => {
              if (nabour !== cell) {
-               RemActive(nabour);
+               nabour.remAct;
                nabour.querySelectorAll(".tab-js").forEach((cell) => {
                  cell.remAct;
                });
