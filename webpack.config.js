@@ -1,13 +1,13 @@
 module.exports = {
-  devtool: 'source-map',
+  devtool: "source-map",
   watch: true,
   entry: {
-    filename: './app.js'
-  }, 
-  output: {
-    filename: './bundle.js'
+    filename: "./app.js",
   },
-   module: {
+  output: {
+    filename: "./bundle.js",
+  },
+  module: {
     rules: [
       {
         test: /\.js$/,
@@ -15,12 +15,21 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            presets: [
-              '@babel/preset-env'
-            ]
-          }
-        }
-      }
-    ]
-  }
-}
+            presets: ["@babel/preset-env"],
+          },
+        },
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          // Creates `style` nodes from JS strings
+          "style-loader",
+          // Translates CSS into CommonJS
+          "css-loader",
+          // Compiles Sass to CSS
+          "sass-loader",
+        ],
+      },
+    ],
+  },
+};

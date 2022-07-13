@@ -25,6 +25,12 @@ import {
 
 Anim();
 Swipers();
+
+import "./assets/scss/app.scss";
+
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
   // if (forms) {
   //   MyForms(forms);
