@@ -8,7 +8,7 @@ export  const Popups = () => {
       contents = popup.querySelectorAll(".popup__content");
 
     document.addEventListener("click", (e) => {
-      const target = e.target;
+      const target = e.target.closest(".popups-init-js");
 
       // ==========================
       const openPop = () => {
